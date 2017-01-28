@@ -1,3 +1,6 @@
+//using AJAX + PHP for personal purpose
+//you actually just need to get the file content by any mean, into the *responseText* variable
+
 var lignes=[];
 
 var xhr = new XMLHttpRequest();
