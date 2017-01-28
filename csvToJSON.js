@@ -1,7 +1,7 @@
 var lignes=[];
 
 var xhr = new XMLHttpRequest();
-xhr.open('GET', 'http://localhost/JS/AJAX/sendList.php');
+xhr.open('GET', 'http://localhost/JS/AJAX/sendList.php'); //customize !
 
 xhr.addEventListener('readystatechange', function() {
 
@@ -61,20 +61,3 @@ if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
 
 });
 xhr.send(null);
-
-/*
-function ltrim(chaine) {
-  var i=0;
-  while(/\s/g.test(chaine.charAt(i))) {
-    i++;
-  }
-  return chaine.substring(i);
-}
-
-function rtrim(chaine) {
-  var j=0;
-  while(/\s/g.test(chaine.charAt(chaine.length-1-j))) {
-    j++;
-  }
-  return chaine.substring(0,chaine.length-j);
-}*/
